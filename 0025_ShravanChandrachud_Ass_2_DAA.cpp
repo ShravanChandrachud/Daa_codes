@@ -90,10 +90,7 @@ string decode(const string &encodedString, MinHeapNode *root)
 
     for (char bit : encodedString)
     {
-        if (bit == '0')
-            current = current->left;
-        else
-            current = current->right;
+        current = (bit == '0') ? current->left : current->right;
 
         if (!current->left && !current->right)
         {
