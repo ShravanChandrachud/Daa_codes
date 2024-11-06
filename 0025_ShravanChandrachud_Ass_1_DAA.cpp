@@ -25,9 +25,9 @@ int rSteps = 0;
 int rStepFibbonacci(int n)
 {
     rSteps++;
-    if (n < 0)
+    if (n < 0 || n == 0)
         return 0;
-    if (n == 1 || n == 0)
+    if (n == 1)
         return 1;
     return rStepFibbonacci(n - 1) + rStepFibbonacci(n - 2);
 }
