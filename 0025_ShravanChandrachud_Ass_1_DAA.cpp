@@ -35,6 +35,7 @@ int rStepFibbonacci(int n)
 int main()
 {
     int n;
+    cout << "Enter the index for fibonacci number: ";
     cin >> n;
     cout << "Fibbonacci Value : " << rStepFibbonacci(n) << '\n';
     cout << "Steps required using Iteration : " << iStepFibbonacci(n) << '\n';
